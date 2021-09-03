@@ -7,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StringComponent implements OnInit {
 
-  cadenastring="Esta es una cadena de tipo string ubicada en string.component.ts"
-  cadenanumerica=1
+  cadenastring: string = "Esta es una cadena de tipo string ubicada en string.component.ts"
+  cadenanumerica:number = 1
+  cadenaalfanumerica: string | number ="cadena alfanumérica 1,2,3"
   constructor() { }
 
   ngOnInit(): void {
+    this.cadenaalfanumerica=5
   }
 
 }
