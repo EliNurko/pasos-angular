@@ -8,7 +8,8 @@ const routes: Routes = [
     component:HomeComponent
   },
   { path: 'lazy', loadChildren: () => import('./pages/lazymodules/lazymodules.module').then(m => m.LazymodulesModule) },
-  { path: 'cadenas', loadChildren: () => import('./pages/cadenas/cadenas.module').then(m => m.CadenasModule) }
+  { path: 'cadenas', loadChildren: () => import('./pages/cadenas/cadenas.module').then(m => m.CadenasModule) },
+  { path: 'git', loadChildren: () => import('./pages/git/git.module').then(m => m.GitModule) },
 ];
 
 @NgModule({
