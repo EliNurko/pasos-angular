@@ -1,0 +1,11 @@
+<h1 class="text-primary">Home Component</h1>
+<!-- código para mostrar un mensajes en padre.compent.ts -->
+<h3>{{consola}}</h3>
+
+<br>
+<!-- código para mandar a llamar la consola en padre.compent.ts -->
+<button class="btn btn-primary" (click)="Cambiarconsola()"> Obtener consola </button>
+
+<hr>
+<!-- código para llamar al otro nombre desde otro componente -->
+<app-hijo [consolaHijo]="consola" (cambionombrehijo)="consola = $event"></app-hijo>
