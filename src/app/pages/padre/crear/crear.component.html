@@ -1,0 +1,39 @@
+<h1>Pasos para crear un input y output</h1>
+
+<hr>
+
+<div>
+    <h2>Crear componentes</h2>
+    <ul>
+        <li>Crear un modulo de "components" y "pages" con --flat</li>
+        <li>Crear un componente padre y uno hijo para enlazarlo</li>
+    </ul>
+
+    <br>
+    
+    <h2>Archivos app.component</h2>
+    <ul>
+        <li>Importar el componentsModule y pages.Module</li>
+        <li>Crear una ruta para el components "padre"</li>
+    </ul>
+
+    <h2>Arcivo componentsModule</h2>
+    <ul>
+        <li>En la sección de "declarations" colocar "CommonModule"</li>
+        <li>En la sección de exports colocar el componente "hijo"</li>
+    </ul>
+
+    <h2>Arcivo Pagesmodule</h2>
+    <ul>
+        <li> Importar el "CommonModule"</li>
+        <li>Importar el "ComponentsModule"</li>
+        <li>Colocar en declarations el componente "padre"</li>
+    </ul>
+
+    <h2>Componente hijo</h2>
+    <ul>
+        <li>Se coloca una función</li>
+        <li>Con el @-input (sin guión) se coloca la función que se desea importar al componente padre</li>
+        <li>El @-output (sin guión) nos cambia el valor en el componente padre</li>
+    </ul>
+</div>
