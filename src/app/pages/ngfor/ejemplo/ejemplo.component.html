@@ -1,9 +1,43 @@
 <h1>Ejemplos de ngFor</h1>
 
-<h2>Ejemplo simple con un array</h2>
+<hr>
 
 <div>
+    <h2>Ejemplo simple con un array</h2>
+
     <ul>
         <li *ngFor="let pelicula of peliculas">{{pelicula}}</li>
     </ul>
+
+</div>
+
+<div>
+
+    <h2>Ejemplo complejo de un array</h2>
+
+    <table class="table">
+        
+        <thead>
+        
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+
+        </thead>
+
+        <tbody>
+          
+            <tr *ngFor="let coche of coches; index as i">
+            <th scope="row">{{i + 1}}</th>
+            <td>{{coche.tipo}}</td>
+            <td>{{coche.marca}}</td>
+            <td>{{coche.cantidad}}</td>
+          </tr>
+
+        </tbody>
+      </table>
+
 </div>
