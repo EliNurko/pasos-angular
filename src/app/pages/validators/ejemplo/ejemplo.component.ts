@@ -8,13 +8,13 @@ import { FormControl, FormGroup, Validators} from '@angular/forms';
 })
 export class EjemploComponent implements OnInit {  
 
-  login = new FormGroup({
-    usuario: new FormControl('', [Validators.required, Validators.minLength(5) ,Validators.maxLength(20)]),
-    email: new FormControl('', [Validators.required, Validators.email]),
-    pass: new FormControl('', [Validators.required, Validators.minLength(8), Validators.maxLength(50)]),
-  })
 
-  get usuario() {
+login:any;
+
+constructor() { }
+
+
+  get usuario() {    
     return this.login.get('usuario');
   }
 
@@ -26,6 +26,12 @@ export class EjemploComponent implements OnInit {
     return this.login.get('email');
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+   this.login = new FormGroup({
+      usuario: new FormControl('', [Validators.required, Validators.minLength(5) ,Validators.maxLength(20)]),
+      email: new FormControl('', [Validators.required, Validators.email]),
+      pass: new FormControl('', [Validators.required, Validators.minLength(8), Validators.maxLength(50)]),
+    })
+  }
 
 }

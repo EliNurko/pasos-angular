@@ -12,8 +12,9 @@
             <div class="col-auto">
               <label for="usuario" class="form-label">Usuario</label>
               <input type="text" class="form-control" formControlName="usuario" id="usuario" placeholder="Nombre del usuario">
-              <!--<small *ngIf="usuario.invalid && usuario.touched">Usuario requerido</small>-->
+              <small class="error" *ngIf="usuario.invalid && usuario.touched">Usuario requerido</small>
             </div>
+
 
             <div class="col-auto">
               <label for="email" class="form-label">Email</label>
