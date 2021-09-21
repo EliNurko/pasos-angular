@@ -1,0 +1,12 @@
+input.ng-invalid{
+border:rgb(241, 83, 83) 2px solid;
+}
+
+input.ng-valid{
+    border:rgb(32, 182, 32) 2px solid;
+    }
+    
+
+.error{
+    color:rgb(241, 83, 83);
+}

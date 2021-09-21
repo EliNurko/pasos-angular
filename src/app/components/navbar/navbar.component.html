@@ -1,4 +1,8 @@
 <ul class="nav nav-tabs">
+  <a class="navbar-brand">{{titulo}}</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
         <!-- enlace cadenas -->
     <li class="nav-item">
         <a class="nav-link " aria-current="page" routerLink="/cadenas">cadenas</a>
@@ -23,4 +27,15 @@
         <li class="nav-item">
             <a class="nav-link " aria-current="page" routerLink="/ngfor">ngfor</a>
         </li>
+          <!-- enlace a validaciones -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              validaciones
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" routerLink="validators">Validaciones</a></li>
+              <li><a class="dropdown-item" routerLink="">Validaciones personalizadas</a></li>
+            </ul>
+          </li>
+  
   </ul>

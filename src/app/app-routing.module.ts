@@ -16,6 +16,9 @@ const routes: Routes = [
 
   { path: 'ngfor', loadChildren: () => import('./pages/ngfor/ngfor.module').then(m => m.NgforModule) },
 
+
+  { path: 'validators', loadChildren: () => import('./pages/validators/validators.module').then(m => m.ValidatorsModule) },
+
 ];
 
 @NgModule({
